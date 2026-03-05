@@ -1,1 +1,25 @@
 test
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+*.tfvars
+.terraform.lock.hcl
+
+# Pulumi
+pulumi/venv/
+Pulumi.*.yaml
+
+# Credentials
+*.pem
+*.key
+*-credentials.json
+credentials
+
+# Ansible
+*.retry
+.vault_pass
+ansible/inventory/*.pyc
+__pycache__/
