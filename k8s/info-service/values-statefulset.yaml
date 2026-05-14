@@ -1,0 +1,18 @@
+nameOverride: app-python
+
+replicaCount: 3
+
+statefulset:
+  enabled: true
+  updateStrategy:
+    type: RollingUpdate
+
+persistence:
+  enabled: true
+  size: 100Mi
+  storageClass: ""
+
+initContainers:
+  enabled: true
+  downloadUrl: "http://example.com"
+  waitForService: ""
